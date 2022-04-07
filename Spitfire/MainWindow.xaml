@@ -16,9 +16,9 @@
         </Canvas.LayoutTransform>
 
 
-        <Rectangle Name="player" Width="50" Height="25" Margin="0" Canvas.Left="0" Canvas.Top="0">
+        <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="0" Canvas.Top="0">
             <Rectangle.Fill>
-                <SolidColorBrush Color="Blue"/>
+                <ImageBrush ImageSource="Images/Player.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
             </Rectangle.Fill>
         </Rectangle>
 

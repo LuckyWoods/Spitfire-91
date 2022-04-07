@@ -93,5 +93,7 @@ namespace Spitfire
             GameEngine ge = new GameEngine(player, playerSpeed);
             ge.playerMove(goUp, goDown, goRight, goLeft);
         }
+
+
     }
 }
