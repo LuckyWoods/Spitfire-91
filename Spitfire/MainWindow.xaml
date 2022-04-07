@@ -5,16 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Spitfire"
         mc:Ignorable="d"
-        Title="Spitfire '91" Height="1080" Width="1920" FocusManager.FocusedElement="{Binding ElementName=GameCanvas}">
-    
+        Title="Spitfire '91" Height="720" Width="1280" FocusManager.FocusedElement="{Binding ElementName=GameCanvas}">
 
-    <Canvas Name="GameCanvas" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Focusable="True" >
-        <Canvas.LayoutTransform>
-            <ScaleTransform x:Name="ApplicationScaleTransform" CenterX="0" CenterY="0" ScaleX="{Binding ElementName=Spitfire.MainWindow, Path=ScaleValue}" ScaleY="{Binding ElementName=Spitfire.MainWindow, Path=ScaleValue}" />
-        </Canvas.LayoutTransform>
+
+    <Canvas Name="GameCanvas" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Focusable="True" Background="#FFC7E5F5" >
+
 
         <Label Name="scoreText" Content="Score: 0" FontSize="48
-               " FontWeight="Bold" Foreground="White" Canvas.Top="996">
+               " FontWeight="Bold" Foreground="White" Canvas.Left="1051">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -27,7 +25,7 @@
             </Label.Effect>
         </Label>
 
-        <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="0" Canvas.Top="0">
+        <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="100" Canvas.Top="400">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="Images/Player.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
             </Rectangle.Fill>

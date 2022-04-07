@@ -20,7 +20,7 @@ namespace Spitfire
     {
         Rectangle player;
         int playerSpeed;
-        int bulletSpeed = 30;
+        int bulletSpeed = 25;
         List<Rectangle> itemstoremove = new List<Rectangle>(); // Remove List
 
         // Audio
@@ -52,7 +52,7 @@ namespace Spitfire
             }
         }
 
-        public int playerFire(Canvas canvas, bool fireTrue)
+        public void playerFire(Canvas canvas)
         {
             // Bullet object
             Rectangle bullet = new Rectangle
@@ -64,19 +64,13 @@ namespace Spitfire
                 Stroke = Brushes.Gold
             };
            
-
-            if (fireTrue) // If player can fire and hits space
-            {
                 Canvas.SetTop(bullet, Canvas.GetTop(player) + (bullet.Height * 3)); // place the bullet on top of the player location
                 Canvas.SetLeft(bullet, Canvas.GetLeft(player) + player.Height); // place the bullet middle of the player image
                 canvas.Children.Add(bullet); // add the bullet to the screen
-                /*
+                
                 // Play Bullet firing sound
                 bulletSound.Load();
-                bulletSound.Play(); */
-            }
-
-            return 7; // Returns how long the player needs to wait to fire again
+                bulletSound.Play();
         }
 
         public void HitDetection(Canvas canvas)

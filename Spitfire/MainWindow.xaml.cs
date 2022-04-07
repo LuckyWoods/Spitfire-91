@@ -31,7 +31,7 @@ namespace Spitfire
         public bool goUp = false;
         public bool goDown = false;
         public bool fireBul = false;
-        int fireDelay = 0;
+        public bool fireRelease = true; // Bool to track whether the fire key has been released or not (used to keep firing from being automatic)
 
         // Collision
         Rect playerHitBox;
@@ -81,7 +81,8 @@ namespace Spitfire
             }
             else if (e.Key == Key.Space)
             {
-                fireBul = true;
+                GameEngine ge = new GameEngine(player, playerSpeed);
+                ge.playerFire(GameCanvas);
             }
         }
 
@@ -103,25 +104,12 @@ namespace Spitfire
             {
                 goRight = false;
             }
-            else if (e.Key == Key.Space)
-            {
-                fireBul = false;
-                fireDelay = 0; // Resets fire delay to 0
-            }
         }
         private void Game_Tick(object sender, EventArgs e)
         {
             GameEngine ge = new GameEngine(player, playerSpeed);
 
             ge.playerMove(goUp, goDown, goRight, goLeft); // Player movement controller
-
-            // Fire Bullets
-            if(fireDelay <= 0)
-            {
-                fireDelay = ge.playerFire(GameCanvas, fireBul);
-            }
-            fireDelay--;
-
             ge.HitDetection(GameCanvas);
         }
 
