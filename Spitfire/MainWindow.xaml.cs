@@ -33,9 +33,6 @@ namespace Spitfire
         public bool fireBul = false;
         public bool fireRelease = true; // Bool to track whether the fire key has been released or not (used to keep firing from being automatic)
 
-        // Collision
-        Rect playerHitBox;
-
         // === Default Keybinds ===
         // Movement
         char kbMoveUp = 'w';

@@ -69,8 +69,8 @@ namespace Spitfire
                 canvas.Children.Add(bullet); // add the bullet to the screen
                 
                 // Play Bullet firing sound
-                bulletSound.Load();
-                bulletSound.Play();
+                //bulletSound.Load();
+                //bulletSound.Play();
         }
 
         public void HitDetection(Canvas canvas)
