@@ -36,10 +36,11 @@ namespace Spitfire
         char kbMoveDown = 's';
         char kbMoveLeft = 'a';
         char kbMoveRight = 'd';
-        
-        public MainWindow(string name)
+
+        public MainWindow()
         {
             InitializeComponent();
+
             // Game Timer
             DispatcherTimer tmr = new DispatcherTimer();
             tmr.Tick += Game_Tick;
