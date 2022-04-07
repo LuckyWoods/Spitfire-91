@@ -5,9 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Spitfire"
         mc:Ignorable="d"
-        Title="Spitfire '91" Height="1080" Width="1920" FocusManager.FocusedElement="{Binding ElementName=GameCanvas}"
-        WindowState="Maximized"
-        WindowStyle="None">
+        Title="Spitfire '91" Height="1080" Width="1920" FocusManager.FocusedElement="{Binding ElementName=GameCanvas}">
     
 
     <Canvas Name="GameCanvas" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Focusable="True" >

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -29,6 +30,8 @@ namespace Spitfire
         public bool goRight = false;
         public bool goUp = false;
         public bool goDown = false;
+        public bool fireBul = false;
+        int fireDelay = 0;
 
         // === Default Keybinds ===
         // Movement
@@ -36,6 +39,9 @@ namespace Spitfire
         char kbMoveDown = 's';
         char kbMoveLeft = 'a';
         char kbMoveRight = 'd';
+
+        // Audio
+        private SoundPlayer music = new SoundPlayer(Properties.Resources.TheAceofSevens);
 
         public MainWindow()
         {
@@ -46,6 +52,10 @@ namespace Spitfire
             tmr.Tick += Game_Tick;
             tmr.Interval = TimeSpan.FromMilliseconds(20); // running the timer every 20 milliseconds
             tmr.Start();
+
+            // Music
+            music.Load();
+            music.PlayLooping();
         }
 
         private void Canvas_KeyDown(object sender, KeyEventArgs e)
@@ -65,6 +75,10 @@ namespace Spitfire
             else if (e.Key == Key.Right)
             {
                 goRight = true;
+            }
+            else if (e.Key == Key.Space)
+            {
+                fireBul = true;
             }
         }
 
@@ -86,12 +100,26 @@ namespace Spitfire
             {
                 goRight = false;
             }
+            else if (e.Key == Key.Space)
+            {
+                fireBul = false;
+                fireDelay = 0; // Resets fire delay to 0
+            }
         }
-
         private void Game_Tick(object sender, EventArgs e)
         {
             GameEngine ge = new GameEngine(player, playerSpeed);
-            ge.playerMove(goUp, goDown, goRight, goLeft);
+
+            ge.playerMove(goUp, goDown, goRight, goLeft); // Player movement controller
+
+            // Fire Bullets
+            if(fireDelay <= 0)
+            {
+                fireDelay = ge.playerFire(GameCanvas, fireBul);
+            }
+            fireDelay--;
+
+            ge.HitDetection(GameCanvas);
         }
 
 
