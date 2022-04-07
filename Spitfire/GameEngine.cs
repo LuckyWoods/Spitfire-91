@@ -20,15 +20,13 @@ namespace Spitfire
         Rectangle player;
         int playerSpeed;
 
-        string instName = "gameEngine";
-        moveObserver movementBoolProvider = new moveObserver(instName);
         public GameEngine(Rectangle player, int playerSpeed)
         {
             this.player = player;
             this.playerSpeed = playerSpeed;
          }
 
-        public void playerMove()
+        public void playerMove(bool goUp, bool goDown, bool goRight, bool goLeft)
         {
             if (goUp && Canvas.GetTop(player) > 0)
             {

@@ -19,13 +19,16 @@ namespace Spitfire
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    /// 
 
 
-    public partial class MainWindow : Window, IObserver<Window>
+    public partial class MainWindow : Window
     {
         // Global values
         public int playerSpeed = 10;
+        public bool goLeft = false;
+        public bool goRight = false;
+        public bool goUp = false;
+        public bool goDown = false;
 
         // === Default Keybinds ===
         // Movement
@@ -37,47 +40,11 @@ namespace Spitfire
         public MainWindow(string name)
         {
             InitializeComponent();
-            this.instName = name;
-
             // Game Timer
             DispatcherTimer tmr = new DispatcherTimer();
             tmr.Tick += Game_Tick;
             tmr.Interval = TimeSpan.FromMilliseconds(20); // running the timer every 20 milliseconds
             tmr.Start();
-        }
-
-        //------ Observee Functions ------ //
-        private IDisposable unsubscriber;
-        private string instName;
-
-        public string Name
-        { get { return this.instName; } }
-
-        public virtual void Subscribe(IObservable<MovementControl> provider)
-        {
-            if (provider != null)
-                unsubscriber = provider.Subscribe(this);
-        }
-
-        public virtual void OnCompleted()
-        {
-            Console.WriteLine("The Location Tracker has completed transmitting data to {0}.", this.Name);
-            this.Unsubscribe();
-        }
-
-        public virtual void OnError(Exception e)
-        {
-            Console.WriteLine("{0}: The location cannot be determined.", this.Name);
-        }
-
-        public virtual void OnNext(Window value)
-        {
-            Console.WriteLine("{2}: The current location is {0}, {1}", value.Latitude, value.Longitude, this.Name);
-        }
-
-        public virtual void Unsubscribe()
-        {
-            unsubscriber.Dispose();
         }
 
         private void Canvas_KeyDown(object sender, KeyEventArgs e)
@@ -120,61 +87,10 @@ namespace Spitfire
             }
         }
 
-        public void EndTransmission()
-        {
-            foreach (var observer in observers.ToArray())
-                if (observers.Contains(observer))
-                    observer.OnCompleted();
-
-            observers.Clear();
-        }
-
-        /* private void Canvas_KeyDown(object sender, KeyEventArgs e)
-        {
-            // Player Movement
-            if (e.Key == Key.Down)
-            {
-                goDown = true;
-            }
-            else if (e.Key == Key.Up)
-            {
-                goUp = true;
-            }
-            else if (e.Key == Key.Left)
-            {
-                goLeft = true;
-            }
-            else if (e.Key == Key.Right)
-            {
-                goRight = true;
-            }
-        }
-
-        private void Canvas_KeyUp(object sender, KeyEventArgs e)
-        {
-            // Player Movement
-            if (e.Key == Key.Down)
-            {
-                goDown = false;
-            }
-            else if (e.Key == Key.Up)
-            {
-                goUp = false;
-            }
-            else if (e.Key == Key.Left)
-            {
-                goLeft = false;
-            }
-            else if (e.Key == Key.Right)
-            {
-                goRight = false;
-            }
-        } */
-
         private void Game_Tick(object sender, EventArgs e)
         {
             GameEngine ge = new GameEngine(player, playerSpeed);
-            ge.playerMove();
+            ge.playerMove(goUp, goDown, goRight, goLeft);
         }
     }
 }
