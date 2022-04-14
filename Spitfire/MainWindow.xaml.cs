@@ -118,6 +118,10 @@ namespace Spitfire
                 fireRelease = true;
             }
         }
+
+        
+        Enemy.EnemyBasic eb = new Enemy.EnemyBasic();
+        
         private void Game_Tick(object sender, EventArgs e)
         {
             GameEngine ge = new GameEngine(player, playerSpeed);

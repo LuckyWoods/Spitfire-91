@@ -112,7 +112,7 @@ namespace Spitfire
 
                 if (x is Rectangle && (string)x.Tag == "enemy")
                 {
-                    Canvas.SetTop(x, Canvas.GetRight(x) + 10); // move the enemy downwards
+                    Canvas.SetLeft(x, Canvas.GetLeft(x) - 10); // Moves enemy right
 
                     // make a new enemy rect for enemy hit box
                     Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
