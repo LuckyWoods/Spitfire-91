@@ -25,6 +25,12 @@
             </Label.Effect>
         </Label>
 
+        <Label Name="pauseTxt" Content="" FontSize="48" FontWeight="Bold" Foreground="White" Canvas.Left="640" Canvas.Top="400">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
         <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="100" Canvas.Top="400">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="Images/Player.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>

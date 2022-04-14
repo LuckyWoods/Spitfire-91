@@ -30,7 +30,7 @@ namespace Spitfire
         public bool goRight = false;
         public bool goUp = false;
         public bool goDown = false;
-        public bool fireBul = false;
+        public bool pause = false;
         public bool fireRelease = true; // Bool to track whether the fire key has been released or not (used to keep firing from being automatic)
 
         // === Default Keybinds ===
@@ -79,12 +79,19 @@ namespace Spitfire
             else if (e.Key == Key.Space)
             {
                 GameEngine ge = new GameEngine(player, playerSpeed);
-                if (fireRelease)
+                if (fireRelease && !pause) // If the fire key is release and the game is not paused
                 {
                     ge.playerFire(GameCanvas);
                     fireRelease = false;
                 }
                     
+            }
+            else if (e.Key == Key.P) // Pause functionality
+            {
+                if(pause)
+                    pause = false;
+                else
+                    pause = true;
             }
         }
 
@@ -115,8 +122,17 @@ namespace Spitfire
         {
             GameEngine ge = new GameEngine(player, playerSpeed);
 
-            ge.playerMove(goUp, goDown, goRight, goLeft); // Player movement controller
-            ge.HitDetection(GameCanvas);
+            if (!pause) // Checks to make sure game isn't paused
+            {
+                pauseTxt.Content = ""; // Empties pause screen
+
+                ge.playerMove(goUp, goDown, goRight, goLeft); // Player movement controller
+                ge.HitDetection(GameCanvas);
+            } else // Display Pause screen
+            {
+                pauseTxt.Content = "Paused";
+            }
+            
         }
 
 
