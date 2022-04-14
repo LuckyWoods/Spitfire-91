@@ -102,12 +102,17 @@ namespace Spitfire
                 goRight = false;
             }
         }
+
+        
+        Enemy.EnemyBasic eb = new Enemy.EnemyBasic();
+        
         private void Game_Tick(object sender, EventArgs e)
         {
             GameEngine ge = new GameEngine(player, playerSpeed);
 
             ge.playerMove(goUp, goDown, goRight, goLeft); // Player movement controller
             ge.HitDetection(GameCanvas);
+            eb.spawnEnemy(GameCanvas);
         }
 
 
