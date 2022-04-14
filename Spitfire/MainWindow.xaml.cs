@@ -79,7 +79,12 @@ namespace Spitfire
             else if (e.Key == Key.Space)
             {
                 GameEngine ge = new GameEngine(player, playerSpeed);
-                ge.playerFire(GameCanvas);
+                if (fireRelease)
+                {
+                    ge.playerFire(GameCanvas);
+                    fireRelease = false;
+                }
+                    
             }
         }
 
@@ -100,6 +105,10 @@ namespace Spitfire
             else if (e.Key == Key.Right)
             {
                 goRight = false;
+            }
+            else if (e.Key == Key.Space)
+            {
+                fireRelease = true;
             }
         }
         private void Game_Tick(object sender, EventArgs e)
