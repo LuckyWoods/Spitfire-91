@@ -18,18 +18,26 @@ namespace Spitfire
 {
     internal class GameEngine
     {
+        Random rng = new Random(); // RNG Values
+
         Rectangle player;
         int playerSpeed;
         int bulletSpeed = 25;
+
+        int health;
+        int score;
+
         List<Rectangle> itemstoremove = new List<Rectangle>(); // Remove List
 
         // Audio
         private SoundPlayer bulletSound = new SoundPlayer(Properties.Resources.bulletSound);
 
-        public GameEngine(Rectangle player, int playerSpeed)
+        public GameEngine(Rectangle player, int playerSpeed, int health, int score)
         {
             this.player = player;
             this.playerSpeed = playerSpeed;
+            this.health = health;
+            this.score = score;
          }
 
         public void playerMove(bool goUp, bool goDown, bool goRight, bool goLeft)
@@ -73,6 +81,18 @@ namespace Spitfire
                 //bulletSound.Play();
         }
 
+        Enemy.EnemyBasic eb = new Enemy.EnemyBasic();
+        public void spawnEnemy(Canvas canvas)
+        {
+            Rectangle e = eb.enemyBasic; // Need to make a new Rectangle each run to avoid errors
+
+            int randPos = rng.Next(0, 720); // Random Y position for enemy to spawn
+
+            Canvas.SetTop(e, Canvas.GetTop(canvas) - randPos); // place the bullet on top of the player location
+            Canvas.SetLeft(e, Canvas.GetRight(canvas)); // place enemy on right side of the screen
+            canvas.Children.Add(e);
+        }
+
         public void HitDetection(Canvas canvas)
         {
             foreach (var x in canvas.Children.OfType<Rectangle>())
@@ -103,7 +123,7 @@ namespace Spitfire
                             {
                                 itemstoremove.Add(x); // remove bullet
                                 itemstoremove.Add(y); // remove enemy
-                                // score++; // add one to the score
+                                score++; // add one to the score
                             }
                         }
 
@@ -112,12 +132,12 @@ namespace Spitfire
 
                 if (x is Rectangle && (string)x.Tag == "enemy")
                 {
-                    Canvas.SetLeft(x, Canvas.GetLeft(x) - 10); // Moves enemy right
+                    Canvas.SetRight(x, Canvas.GetRight(x) + 10); // Moves enemy right
 
                     // make a new enemy rect for enemy hit box
                     Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
 
-                    // Enemies going off screen
+                    // Enemies going off screen 
                     if (Canvas.GetLeft(x) < 0)
                     {
                         itemstoremove.Add(x);
@@ -137,11 +157,7 @@ namespace Spitfire
                 // remove them permanently from the canvas
                 canvas.Children.Remove(y);
             }
-
-
-
             }
-
         }
     }
 }
