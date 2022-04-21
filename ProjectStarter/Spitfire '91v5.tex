@@ -305,10 +305,12 @@ The project switches between three main windows, that open and close as appropri
 
 
 \subsection{UML Outline}
+\ref {UML}
+Here you can see the UML for our program. The meat of the program is in the GameEngine class, that contains several important functions that are called by both the game's main window 'GameMain' and the GameOverWindow. The Bullet class is derived from the bullet template (Template Design Pattern) and provides the fireBullet function the Rectangle it needs to add to the screen. The spawnEnemy function needs an Enemy class, including EnemyBasic and it's two children (Factory Design Pattern). The three windows are designed to be swapped between when certain functions are called.
 \begin{figure}[ht!]
 \includegraphics[height=250px, width=350px]{DIA.png}
 \caption{This is the UML}
-\label{cat2}
+\label{UML}
 \end{figure}
 
 \subsection{Design Patterns Used}
@@ -316,42 +318,10 @@ We are implementing the Factory Pattern and Template Pattern for the project.
 
 
 \section{Results}
-This section will start out a little vague, but it should grow as your project evolves.  With each deliverable you hand in, give me a final summary of where your project stands.  By the end, this should be a reflective section discussing how many of your original goals you managed to attain/how many desired use cases you implemented/how many extra features you added.
+Turns out WPF is not really meant for making games, and by not really, we mean not at all. WPF is an absolute nightmare to make games for, causing us to have to find weird workarounds and use things in strange unintended ways. Since neither of us took any graphics classes before hand we were stuck wrangling with the default WPF canvas. Currently we got a 'game' where you can move around the plane and shoot, but not much else. As it currently stands, enemy spawning is currently broken, and without enemy spawning various game functions like health, scoring, and the game over screen have no function.
 
 \subsection{Future Work}
-Where are you going next with your project?
-For early deliverables, what are your next steps?  (HINT: you will typically want to look back at your timeline and evaluate: did you meet your expected goals?  Are you ahead of schedule?  Did you decide to shift gears and implement a new feature?)
-By the end, what do you plan on doing with this project?  Will you try to sell it?  Set it on fire?  Link to it on your resume and forget it exists?
-
-
-
-
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
-
-
-
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
-\end{IEEEbiography}
-
-% if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
-
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+We are about $\frac{3}{5}^{ths}$ done with the project, but we only have so much time left. Highest priority is getting enemies to work, as without enemies key functions of the game like scoring have no purpose or function. We also need to make the Main Menu and Game Over menu, including the saving and displaying of high scores.
 
 
 

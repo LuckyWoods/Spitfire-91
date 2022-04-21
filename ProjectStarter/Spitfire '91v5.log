@@ -1,28 +1,27 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.2.4)  28 MAR 2022 19:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.21)  21 APR 2022 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"./Spitfire '91v5.tex"
 (Spitfire '91v5.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22>
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/ieeetran\IEEEtran.cls
-Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+L3 programming layer <2022-04-10> (IEEEtran.cls
+Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen138
 \@IEEEtrantmpdimenB=\dimen139
 \@IEEEtrantmpdimenC=\dimen140
-\@IEEEtrantmpcountA=\count183
-\@IEEEtrantmpcountB=\count184
-\@IEEEtrantmpcountC=\count185
+\@IEEEtrantmpcountA=\count185
+\@IEEEtrantmpcountB=\count186
+\@IEEEtrantmpcountC=\count187
 \@IEEEtrantmptoksA=\toks16
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-03.
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 4
+58.
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
--- Using IEEE Computer Society mode.
 ** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
@@ -32,57 +31,57 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \CLASSINFOnormalsizeunitybaselineskip=\dimen143
 \IEEEnormaljot=\dimen144
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.01874> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5.01874> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.02625> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7.02625> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8.03> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.03374> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9.03374> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.03749> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.03749> not available
 
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11.04124> not available
 
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12.045> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12.045> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.06374> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17.06374> not available
 
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.075> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20.075> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.09> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.09> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
 
 \IEEEquantizedlength=\dimen145
 \IEEEquantizedlengthdiff=\dimen146
@@ -96,42 +95,41 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.09> not available
 \IEEEiednormlabelsep=\dimen154
 \IEEEiedmathlabelsep=\dimen155
 \IEEEiedtopsep=\skip47
-\c@section=\count186
-\c@subsection=\count187
-\c@subsubsection=\count188
-\c@paragraph=\count189
-\c@IEEEsubequation=\count190
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@IEEEsubequation=\count192
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\c@figure=\count191
-\c@table=\count192
-\@IEEEeqnnumcols=\count193
-\@IEEEeqncolcnt=\count194
-\@IEEEsubeqnnumrollback=\count195
+\c@figure=\count193
+\c@table=\count194
+\@IEEEeqnnumcols=\count195
+\@IEEEeqncolcnt=\count196
+\@IEEEsubeqnnumrollback=\count197
 \@IEEEquantizeheightA=\dimen156
 \@IEEEquantizeheightB=\dimen157
 \@IEEEquantizeheightC=\dimen158
 \@IEEEquantizeprevdepth=\dimen159
-\@IEEEquantizemultiple=\count196
+\@IEEEquantizemultiple=\count198
 \@IEEEquantizeboxA=\box50
 \@IEEEtmpitemindent=\dimen160
-\IEEEPARstartletwidth=\dimen161
-\c@IEEEbiography=\count197
+\c@IEEEbiography=\count199
 \@IEEEtranrubishbin=\box51
-) (C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+) (C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
 ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
@@ -139,121 +137,116 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
 ty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
 keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
 ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
 .sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen162
-\Hy@linkcounter=\count198
-\Hy@pagecounter=\count199
- (C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count266
+\Hy@pagecounter=\count267
+ (C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
-atches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
-nguages
-)
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count266
- (C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count268
+ (C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count267
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count269
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen163
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen162
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
 .sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count268
-\Field@Width=\dimen164
-\Fld@charsize=\dimen165
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
+\Fld@menulength=\count270
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count269
-\c@Item=\count270
-\c@Hfootnote=\count271
+\Hy@abspage=\count271
+\c@Item=\count272
+\c@Hfootnote=\count273
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count272
-\c@bookmark@seq@number=\count273
+\Fld@listcount=\count274
+\c@bookmark@seq@number=\count275
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
 ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -262,45 +255,45 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip51
-\enit@outerparindent=\dimen166
+\enit@outerparindent=\dimen165
 \enit@toks=\toks18
 \enit@inbox=\box52
-\enit@count@id=\count274
-\enitdp@description=\count275
+\enit@count@id=\count276
+\enitdp@description=\count277
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
 fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen167
-\Gin@req@width=\dimen168
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count276
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box53
 ) (Spitfire '91v5.aux)
 \openout1 = `"Spitfire '91v5.aux"'.
@@ -326,17 +319,17 @@ LaTeX Font Info:    ... okay on input line 141.
 
 -- Lines per column: 58 (exact).
 Package hyperref Info: Link coloring OFF on input line 141.
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count277
+\c@section@level=\count279
 )
 LaTeX Info: Redefining \ref on input line 141.
 LaTeX Info: Redefining \pageref on input line 141.
@@ -346,34 +339,34 @@ LaTeX Info: Redefining \nameref on input line 141.
 \openout3 = `"Spitfire '91v5.out"'.
 
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count278
-\scratchdimen=\dimen169
+\scratchcounter=\count280
+\scratchdimen=\dimen168
 \scratchbox=\box54
-\nofMPsegments=\count279
-\nofMParguments=\count280
+\nofMPsegments=\count281
+\nofMParguments=\count282
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count281
-\MPscratchDim=\dimen170
-\MPnumerator=\count282
-\makeMPintoPDFobject=\count283
+\MPscratchCnt=\count283
+\MPscratchDim=\dimen169
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
 \everyMPtoPDFconversion=\toks20
 )
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+(C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
 62.
- (C:\Users\meggo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+ (C:\Users\gasio\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 20
@@ -385,7 +378,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.01874> on input line 204.
 
-[1{C:/Users/meggo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[1{C:/Users/gasio/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 226.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8.03> on input line 226.
@@ -393,22 +386,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.62097> on input line 226.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <4.015> on input line 226.
-<Spitfire_91MockUp.jpg, id=83, 770.88pt x 674.52pt>
+<Spitfire_91MockUp.jpg, id=79, 770.88pt x 674.52pt>
 File: Spitfire_91MockUp.jpg Graphic file (type jpg)
 <use Spitfire_91MockUp.jpg>
 Package pdftex.def Info: Spitfire_91MockUp.jpg  used on input line 286.
 (pdftex.def)             Requested size: 351.3038pt x 250.93738pt.
  [2]
-<DIA.png, id=96, 810.02625pt x 413.74574pt>
+<DIA.png, id=93, 650.43pt x 470.35725pt>
 File: DIA.png Graphic file (type png)
 <use DIA.png>
-Package pdftex.def Info: DIA.png  used on input line 309.
-(pdftex.def)             Requested size: 250.9325pt x 150.56454pt.
+Package pdftex.def Info: DIA.png  used on input line 311.
+(pdftex.def)             Requested size: 351.31628pt x 250.93887pt.
 
-[3 <./Spitfire_91MockUp.jpg> <./DIA.png>]
-** WARNING: \IEEEbiography is locked out when in conference mode (line 339).
-** WARNING: \IEEEbiographynophoto is locked out when in conference mode (line 3
-44).
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -420,27 +409,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (Spitfire '91v5.aux)
+[3 <./Spitfire_91MockUp.jpg>] [4 <./DIA.png>] (Spitfire '91v5.aux)
 Package rerunfilecheck Info: File `"Spitfire '91v5".out' has not changed.
-(rerunfilecheck)             Checksum: 3E4EF7A1356297435231A3E9DBB8823F;2104.
+(rerunfilecheck)             Checksum: 11B4CCAC58632D98909634272B8AB453;2009.
  ) 
 Here is how much of TeX's memory you used:
- 9518 strings out of 478659
- 156744 string characters out of 2845921
- 463706 words of memory out of 3000000
- 27492 multiletter control sequences out of 15000+600000
- 441268 words of font info for 89 fonts, out of 8000000 for 9000
+ 9459 strings out of 478552
+ 156097 string characters out of 2841938
+ 456213 words of memory out of 3000000
+ 27551 multiletter control sequences out of 15000+600000
+ 504277 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,952b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/meggo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
-/Users/meggo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb><C:/Users/meggo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a
-.pfb><C:/Users/meggo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a
-.pfb><C:/Users/meggo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on "Spitfire '91v5.pdf" (4 pages, 282161 bytes).
+ 60i,8n,63p,952b,427s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/gasio/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/gasio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Users/gasio/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><C:/Users/gasio/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb><C:/Users/gasio/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/times/utmb8a.pfb><C:/Users/gasio/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/times/utmr8a.pfb>
+Output written on "Spitfire '91v5.pdf" (4 pages, 326000 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
