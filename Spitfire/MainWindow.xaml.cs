@@ -24,6 +24,21 @@ namespace Spitfire
 
     public partial class MainWindow : Window
     {
+        private void StartGame_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckScore_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+
+
+
+
+        /*
         // Global values
         public int playerSpeed = 10;
         public bool goLeft = false;
@@ -121,7 +136,7 @@ namespace Spitfire
 
             ge.HitDetection(GameCanvas);
         }
-
+        */
 
     }
 }

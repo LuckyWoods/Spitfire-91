@@ -6,19 +6,64 @@
         xmlns:local="clr-namespace:Spitfire"
         mc:Ignorable="d"
         Title="Spitfire '91" Height="1080" Width="1920" FocusManager.FocusedElement="{Binding ElementName=GameCanvas}">
-    
-
-    <Canvas Name="GameCanvas" KeyDown="Canvas_KeyDown" KeyUp="Canvas_KeyUp" Focusable="True" >
-        <Canvas.LayoutTransform>
-            <ScaleTransform x:Name="ApplicationScaleTransform" CenterX="0" CenterY="0" ScaleX="{Binding ElementName=Spitfire.MainWindow, Path=ScaleValue}" ScaleY="{Binding ElementName=Spitfire.MainWindow, Path=ScaleValue}" />
-        </Canvas.LayoutTransform>
 
 
-        <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="0" Canvas.Top="0">
-            <Rectangle.Fill>
-                <ImageBrush ImageSource="Images/Player.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
-            </Rectangle.Fill>
-        </Rectangle>
+    <Canvas Name="MenuCanvas" Background="LightSkyBlue">
+        <Label x:Name="TitleScreen" Background="white" 
+               FontSize="140" FontFamily="times new roman" 
+               Canvas.Left="344" Canvas.Top="71" Width="800">SPITFIRE '91</Label>
+        <TextBlock x:Name="ScoreBoard" Background="white" 
+               FontSize="100" FontFamily="times new roman" TextAlignment="Center"
+               Canvas.Left="707" Canvas.Top="296" Width="1011" Height="120">Score Board</TextBlock>
+
+        <Button x:Name="StartGame" Background="white" 
+                FontSize="100" FontFamily="times new roman" 
+                Canvas.Left="128" Canvas.Top="407" Width="432" Height="160" Click="StartGame_Click">Start</Button>
+        <Button x:Name="CheckScore" Background="white" 
+                FontSize="100" FontFamily="times new roman" 
+                Canvas.Left="128" Canvas.Top="614" Width="432" Height="160" Click="CheckScore_Click">Exit</Button>
+
+        <Label x:Name="HighOne" Background="white"
+               FontSize="50"
+               Canvas.Left="707" Canvas.Top="407" Height="89" Width="508">1. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighTwo" Background="white"
+            FontSize="50"
+            Canvas.Left="707" Canvas.Top="491" Height="89" Width="508">2. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighThree" Background="white"
+            FontSize="50"
+            Canvas.Left="707" Canvas.Top="580" Height="89" Width="508">3. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighFour" Background="white"
+            FontSize="50"
+            Canvas.Left="707" Canvas.Top="663" Height="88" Width="508">4. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighFive" Background="white"
+            FontSize="50"
+            Canvas.Left="707" Canvas.Top="751" Height="88" Width="508">5. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighSix" Background="white"
+            FontSize="50"
+            Canvas.Left="1215" Canvas.Top="407" Height="88" Width="503">6. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighSeven" Background="white"
+            FontSize="50"
+            Canvas.Left="1215" Canvas.Top="491" Height="88" Width="503">7. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighEight" Background="white"
+            FontSize="50"
+            Canvas.Left="1215" Canvas.Top="578" Height="88" Width="503">8. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighNine" Background="white"
+            FontSize="50"
+            Canvas.Left="1215" Canvas.Top="663" Height="88" Width="503">9. GUERIN 1,000,000
+        </Label>
+        <Label x:Name="HighTeen" Background="white"
+            FontSize="50"
+            Canvas.Left="1215" Canvas.Top="751" Height="88" Width="503">10. GUERIN 1,000,000
+        </Label>
+
 
     </Canvas>
 </Window>
