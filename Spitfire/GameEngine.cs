@@ -16,6 +16,22 @@ using System.Media;
 
 namespace Spitfire
 {
+    public abstract class BulletClass
+    {
+        public Rectangle Bullet;
+    }
+
+    public class ConBulletClass : BulletClass
+    {
+        public Rectangle Bullet = new Rectangle
+        {
+            Tag = "bullet",
+            Height = 5,
+            Width = 20,
+            Fill = Brushes.Yellow,
+            Stroke = Brushes.Gold
+        };
+    }
     internal class GameEngine
     {
         Random rng = new Random(); // RNG Values
@@ -60,17 +76,11 @@ namespace Spitfire
             }
         }
 
+        ConBulletClass bu = new ConBulletClass();
         public void playerFire(Canvas canvas)
         {
             // Bullet object
-            Rectangle bullet = new Rectangle
-            {
-                Tag = "bullet",
-                Height = 5,
-                Width = 20,
-                Fill = Brushes.Yellow,
-                Stroke = Brushes.Gold
-            };
+            Rectangle bullet = bu.Bullet;
            
                 Canvas.SetTop(bullet, Canvas.GetTop(player) + (bullet.Height * 3)); // place the bullet on top of the player location
                 Canvas.SetLeft(bullet, Canvas.GetLeft(player) + player.Height); // place the bullet middle of the player image
@@ -186,8 +196,8 @@ namespace Spitfire
 
                 if (x is Rectangle && (string)x.Tag == "enemy")
                 {
-                    Canvas.SetLeft(x, Canvas.GetLeft(x) - bulletSpeed); // Moves enemy left
-                    Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height); // make a new enemy rect for enemy hit box
+                    Canvas.SetRight(x, Canvas.GetRight(x) + bulletSpeed); // move bullet right
+                    Rect enemy = new Rect(Canvas.GetRight(x), Canvas.GetTop(x), x.Width, x.Height); // make a rect class with  properties
 
                     // Enemies going off screen 
                     if (Canvas.GetLeft(x) <= 0)
