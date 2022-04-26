@@ -82,14 +82,68 @@ namespace Spitfire
         }
 
         Enemy.EnemyBasic eb = new Enemy.EnemyBasic();
+        Enemy.EnemyFast ef = new Enemy.EnemyFast();
         public void spawnEnemy(Canvas canvas)
         {
-            Rectangle e = eb.enemyBasic; // Need to make a new Rectangle each run to avoid errors
+            int randEnemey = rng.Next(0, 2); // Random enemy to spawn
+            Rectangle e;
 
-            int randPos = rng.Next(0, 720); // Random Y position for enemy to spawn
+            if(randEnemey == 2)
+            {
+                e = ef.enemyFast;
+            } else
+            {
+                e = eb.enemyBasic;
+            }
 
-            Canvas.SetTop(e, 300); 
+            int randPos = rng.Next(0, 10);
+
+            Canvas.SetTop(e, 0); 
             Canvas.SetRight(e, 0); 
+
+            if(randPos == 0)
+            {
+                Canvas.SetTop(e, 100);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 2)
+            {
+                Canvas.SetTop(e, 150);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 3)
+            {
+                Canvas.SetTop(e, 200);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 4)
+            {
+                Canvas.SetTop(e, 250);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 5)
+            {
+                Canvas.SetTop(e, 300);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 6)
+            {
+                Canvas.SetTop(e, 450);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 7)
+            {
+                Canvas.SetTop(e, 500);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 8)
+            {
+                Canvas.SetTop(e, 550);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 9)
+            {
+                Canvas.SetTop(e, 600);
+                Canvas.SetRight(e, 0);
+            } else if (randPos == 10)
+            {
+                Canvas.SetTop(e, 650);
+                Canvas.SetRight(e, 0);
+            }
+
+
             canvas.Children.Add(e);
         }
 
@@ -145,7 +199,7 @@ namespace Spitfire
                     // if the player hit box and the enemy is colliding 
                     if (playerHitBox.IntersectsWith(enemy))
                     {
-                        health += 1; // remove one from health
+                        health -= 1; // remove one from health
                         itemstoremove.Add(x); // remove the enemy object
                     }*/
                 }
