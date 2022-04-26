@@ -24,8 +24,8 @@ namespace Spitfire
         int playerSpeed;
         int bulletSpeed = 25;
 
-        int health;
-        int score;
+        int health = 3;
+        int score = 0;
 
         List<Rectangle> itemstoremove = new List<Rectangle>(); // Remove List
 
@@ -88,8 +88,8 @@ namespace Spitfire
 
             int randPos = rng.Next(0, 720); // Random Y position for enemy to spawn
 
-            Canvas.SetTop(e, Canvas.GetTop(canvas) - randPos); // place the bullet on top of the player location
-            Canvas.SetLeft(e, Canvas.GetRight(canvas)); // place enemy on right side of the screen
+            Canvas.SetTop(e, 300); 
+            Canvas.SetRight(e, 0); 
             canvas.Children.Add(e);
         }
 
@@ -132,13 +132,11 @@ namespace Spitfire
 
                 if (x is Rectangle && (string)x.Tag == "enemy")
                 {
-                    Canvas.SetRight(x, Canvas.GetRight(x) + 10); // Moves enemy right
-
-                    // make a new enemy rect for enemy hit box
-                    Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
+                    Canvas.SetLeft(x, Canvas.GetLeft(x) - bulletSpeed); // Moves enemy left
+                    Rect enemy = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height); // make a new enemy rect for enemy hit box
 
                     // Enemies going off screen 
-                    if (Canvas.GetLeft(x) < 0)
+                    if (Canvas.GetLeft(x) <= 0)
                     {
                         itemstoremove.Add(x);
                     }
@@ -147,9 +145,9 @@ namespace Spitfire
                     // if the player hit box and the enemy is colliding 
                     if (playerHitBox.IntersectsWith(enemy))
                     {
-                        health += 5; // add 5 to the damage
+                        health += 1; // remove one from health
                         itemstoremove.Add(x); // remove the enemy object
-                    } */
+                    }*/
                 }
 
             foreach (Rectangle y in itemstoremove)

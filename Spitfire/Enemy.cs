@@ -30,5 +30,16 @@ namespace Spitfire
 
             public int enemySpeed = 15;
         }
+
+        public class EnemyFast : EnemyBasic
+        {
+            public Rectangle enemyFast = new Rectangle
+            {
+                Tag = "enemy",
+                Height = 40,
+                Width = 46,
+                Fill = Brushes.Purple
+            };
+        }
     }
 }
