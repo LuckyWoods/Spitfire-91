@@ -12,7 +12,7 @@
 
 
         <Label Name="scoreText" Content="Score: 0" FontSize="48
-               " FontWeight="Bold" Foreground="White" Canvas.Left="1051">
+               " FontWeight="Bold" Foreground="White" Canvas.Left="973" RenderTransformOrigin="0.066,0.459">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -31,7 +31,7 @@
             </Label.Effect>
         </Label>
 
-        <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="100" Canvas.Top="400">
+        <Rectangle Name="player" Width="60" Height="39" Margin="0" Canvas.Left="100" Canvas.Top="400" Tag="player">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="Images/Player.png" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
             </Rectangle.Fill>

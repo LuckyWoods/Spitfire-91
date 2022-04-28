@@ -48,12 +48,10 @@ namespace Spitfire
         // Audio
         private SoundPlayer bulletSound = new SoundPlayer(Properties.Resources.bulletSound);
 
-        public GameEngine(Rectangle player, int playerSpeed, int health, int score)
+        public GameEngine(Rectangle player, int playerSpeed)
         {
             this.player = player;
             this.playerSpeed = playerSpeed;
-            this.health = health;
-            this.score = score;
          }
 
         public void playerMove(bool goUp, bool goDown, bool goRight, bool goLeft)
@@ -157,6 +155,16 @@ namespace Spitfire
             canvas.Children.Add(e);
         }
 
+        public int ScoreUpdate()
+        {
+            return score;
+        }
+
+        public int HealthUpdate()
+        {
+            return health;
+        }
+
         public void HitDetection(Canvas canvas)
         {
             foreach (var x in canvas.Children.OfType<Rectangle>())
@@ -178,13 +186,13 @@ namespace Spitfire
                     {
                         if (y is Rectangle && (string)y.Tag == "enemy")
                         {
-                            Rect enemy = new Rect(Canvas.GetLeft(y), Canvas.GetTop(y), y.Width, y.Height);
-
+                            Rect enemy = new Rect(Canvas.GetRight(x), Canvas.GetTop(x), x.Width, x.Height);
 
                             // now check if bullet and enemy is colliding or not
                             // if the bullet is colliding with the enemy rectangle
                             if (bullet.IntersectsWith(enemy))
                             {
+                                MessageBox.Show("HIT");
                                 itemstoremove.Add(x); // remove bullet
                                 itemstoremove.Add(y); // remove enemy
                                 score++; // add one to the score
@@ -203,15 +211,20 @@ namespace Spitfire
                     if (Canvas.GetLeft(x) <= 0)
                     {
                         itemstoremove.Add(x);
-                    }
-
-                    /*
-                    // if the player hit box and the enemy is colliding 
-                    if (playerHitBox.IntersectsWith(enemy))
+                    } /*
+                    foreach (var y in canvas.Children.OfType<Rectangle>()) // run another for each loop inside of the main loop
                     {
-                        health -= 1; // remove one from health
-                        itemstoremove.Add(x); // remove the enemy object
-                    }*/
+                        if (y is Rectangle && (string)y.Tag == "player")
+                        {
+                            Rect playerHitBox = new Rect(Canvas.GetLeft(y), Canvas.GetTop(y), y.Width, y.Height);
+                            // if the player hit box and the enemy is colliding 
+                            if (playerHitBox.IntersectsWith(enemy))
+                            {
+                                health -= 1; // remove one from health
+                                itemstoremove.Add(x); // remove the enemy object
+                            }
+                        }
+                    } */
                 }
 
             foreach (Rectangle y in itemstoremove)
