@@ -117,6 +117,10 @@ namespace Spitfire
             {
                 fireRelease = true;
             }
+            else if (e.Key == Key.M)
+            {
+                MenuPause();
+            }
         }
 
         
@@ -137,6 +141,14 @@ namespace Spitfire
                 pauseTxt.Content = "Paused";
             }
             
+        }
+
+        private void MenuPause()
+        {
+            MainMenu menu = new MainMenu();
+            Close();
+            menu.Show();
+
         }
 
 

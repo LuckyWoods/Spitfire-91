@@ -13,5 +13,6 @@ namespace Spitfire
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }
