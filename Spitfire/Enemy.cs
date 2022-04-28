@@ -20,24 +20,26 @@ namespace Spitfire
     {
         public class EnemyBasic
         {
-            public void spawnEnemy(Canvas canvas)
+            public Rectangle enemyBasic = new Rectangle
             {
-                Rectangle enemy = new Rectangle
-                {
-                    Tag = "enemy",
-                    Height = 50,
-                    Width = 56,
-                    Fill = Brushes.Red
-                };
+                Tag = "enemy",
+                Height = 50,
+                Width = 56,
+                Fill = Brushes.Red
+            };
 
-                Random rng = new Random();
-                int randPos = rng.Next(0, 720); // Random Y position for enemy to spawn
+            public int enemySpeed = 15;
+        }
 
-                Canvas.SetTop(enemy, Canvas.GetTop(canvas) + randPos); // place the bullet on top of the player location
-                Canvas.SetLeft(enemy, Canvas.GetRight(canvas)); // place enemy on right side of the screen
-                canvas.Children.Add(enemy);
-            }
-
+        public class EnemyFast : EnemyBasic
+        {
+            public Rectangle enemyFast = new Rectangle
+            {
+                Tag = "enemy",
+                Height = 40,
+                Width = 46,
+                Fill = Brushes.Purple
+            };
         }
     }
 }

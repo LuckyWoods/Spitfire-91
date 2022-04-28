@@ -26,6 +26,11 @@ namespace Spitfire
     {
         // Global values
         public int playerSpeed = 10;
+        public int score = 0;
+        public int health = 3;
+        public int spawnDelay = 0; // Tracks how long until an enemy can spawn again
+
+        // Global bools
         public bool goLeft = false;
         public bool goRight = false;
         public bool goUp = false;
@@ -92,6 +97,8 @@ namespace Spitfire
                     pause = false;
                 else
                     pause = true;
+                GameEngine ge = new GameEngine(player, playerSpeed, health, score);
+                ge.playerFire(GameCanvas);
             }
         }
 
@@ -120,11 +127,11 @@ namespace Spitfire
         }
 
         
-        Enemy.EnemyBasic eb = new Enemy.EnemyBasic();
+        
         
         private void Game_Tick(object sender, EventArgs e)
         {
-            GameEngine ge = new GameEngine(player, playerSpeed);
+            GameEngine ge = new GameEngine(player, playerSpeed, health, score);
 
             if (!pause) // Checks to make sure game isn't paused
             {
@@ -137,6 +144,22 @@ namespace Spitfire
                 pauseTxt.Content = "Paused";
             }
             
+            ge.playerMove(goUp, goDown, goRight, goLeft); // Player movement controller
+
+            if(spawnDelay <= 0) // If there is no spawn delay, spwan an enemy
+            {
+                ge.spawnEnemy(GameCanvas);
+                spawnDelay = 1000;
+            }
+            else
+            {
+                int spawnDelayReducer = 10; // (1 * (score + 1 / 3)); // Reduction to spawn delay increases with score
+                if (spawnDelayReducer > 950) // Check to make sure enemies can't spawn instantly with the current spawn delay
+                    spawnDelay = spawnDelayReducer = 950;
+                spawnDelay -= spawnDelayReducer;
+            }
+
+            ge.HitDetection(GameCanvas);
         }
 
 

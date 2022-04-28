@@ -18,7 +18,7 @@
             </Label.Effect>
         </Label>
 
-        <Label Name="healthText" Content="Health: 0" FontSize="48
+        <Label Name="healthText" Content="Health: 3" FontSize="48
                " FontWeight="Bold" Foreground="White" Canvas.Left="10">
             <Label.Effect>
                 <DropShadowEffect/>
