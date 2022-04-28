@@ -98,7 +98,7 @@ namespace Spitfire
             int randEnemey = rng.Next(0, 2); // Random enemy to spawn
             Rectangle e;
 
-            if(randEnemey == 2)
+            if(randEnemey == 1)
             {
                 e = ef.enemyFast;
             } else
@@ -196,7 +196,7 @@ namespace Spitfire
 
                 if (x is Rectangle && (string)x.Tag == "enemy")
                 {
-                    Canvas.SetRight(x, Canvas.GetRight(x) + bulletSpeed); // move bullet right
+                    Canvas.SetRight(x, Canvas.GetRight(x) + 10); // move enemy right
                     Rect enemy = new Rect(Canvas.GetRight(x), Canvas.GetTop(x), x.Width, x.Height); // make a rect class with  properties
 
                     // Enemies going off screen 

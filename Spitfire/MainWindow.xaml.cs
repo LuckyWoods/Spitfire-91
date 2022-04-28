@@ -124,7 +124,7 @@ namespace Spitfire
             }
             else
             {
-                int spawnDelayReducer = (1 * (score + 1 / 3)); // Reduction to spawn delay increases with score
+                int spawnDelayReducer = 10; // (1 * (score + 1 / 3)); // Reduction to spawn delay increases with score
                 if (spawnDelayReducer > 950) // Check to make sure enemies can't spawn instantly with the current spawn delay
                     spawnDelay = spawnDelayReducer = 950;
                 spawnDelay -= spawnDelayReducer;
