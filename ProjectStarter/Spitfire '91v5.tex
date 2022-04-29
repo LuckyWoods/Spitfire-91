@@ -146,12 +146,12 @@
 
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 
-\author{Victor Gasior and Jaxx 'Lucky' Woods
+\author{Victor Gasior and Jaxx Woods
 }
 
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Spitfire '91 is a retro inspired Shoot 'em Up game (or shmup) where you control a small airplane fighting drones, tanks, and enemy aircraft. The target audience for this project is fans of retro schups like EDF or UN Squadron. So far we have constructed just the basic plans for the project.
+Spitfire '91 is a retro inspired Shoot 'em Up game (or shmup) where you control a small airplane fighting enemy aircraft. The target audience for this project is fans of retro schups like EDF or UN Squadron.
 \end{abstract}
 
 }
@@ -169,35 +169,36 @@ Spitfire '91 is a retro inspired Shoot 'em Up game (or shmup) where you control 
 
 
 \section{Introduction}
-Spitfire '91 should be a fun, fast paced, retro inspired Shoot 'em Up game made in WPF / C Sharp. In Spitfire '91 the player controls a modern military fighter jet and fights enemy jets, drones, and ground vehicles. The game is supposed to emulate an SNES (Super Nintendo Entertainment System) era Shoot 'em Up game with its own art, design, sounds, and mechanics. There will be at least one stage where the players can fight enemies in order to try to get a higher and higher high scores. The target audience for this game will be Shoot 'em Up enthusiasts and fans of retro styled video games in general. The audience should first and foremost enjoy the game, while also tailoring the experience to resemble a retro shmup without making it difficult for fans of modern video games to enjoy.  There are not many Shoot 'em Up games produced any more so we are appealing to a niche audience starved of content.
+Spitfire '91 is a fun, fast paced, retro inspired Shoot 'em Up game made in WPF / C Sharp. In Spitfire '91 the player controls a modern military fighter jet and fights enemy jets (repersented by colored squares). The game is designed to emulate an SNES (Super Nintendo Entertainment System) era Shoot 'em Up game with its own art, design, sounds, and mechanics. There is one stage where the players can fight enemies until they die in order to try to get a higher and higher high scores. The target audience for this game will be Shoot 'em Up enthusiasts and fans of retro styled video games in general. The audience should first and foremost enjoy the game, while also tailoring the experience to resemble a retro Shoot 'em Up without making it difficult for fans of modern video games to enjoy.  There are not many Shoot 'em Up games produced any more so we are appealing to a niche audience starved of content.
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
 
 \subsection{Background}
-Shoot em' Ups rely on a player controller a vehicle that can move around the screen and shoot enemies that are trying to attack the player. The player obtains score by avoiding and defeating enemies. The game ends once they reach the end of the level / stage or loses do to being hit by enemies too many times
+Shoot em' Ups rely on a player controlled vehicle that can move around the screen and shoot enemies that are trying to attack the player. The player obtains points by avoiding and defeating enemies. The game ends once they reach the end of the level / stage or loses do to being hit by enemies too many times, some Shoot 'em Ups are endless where a player goes for a highscore, like Galaga.
 
 The reason we decided to undertake this project is that Shoot 'em Ups are both fun to play, and seem interesting to design.
 
 \subsubsection{Important Terminology}
-Shump - Common abbreviation for Shoot 'em Up
-High Score - A goal of a Shoot 'em Up game, players try to earn higher scores.
+\begin{itemize}
+\item Shump - Common abbreviation for Shoot 'em Up
+\item High Score - A goal of a Shoot 'em Up game, players try to earn higher scores.
+\item Collision - How the game detects whether or not a game object has toutched another game object.
+\end{itemize}
 
 \subsection{Impacts}
-This game should bring enjoyment to the audience and provide a free modern alternative to old retro Shoot 'em Up games that can be hard to play due to old hardware and games not being ported to modern systems.
+This game should bring enjoyment to the audience and provide a free, modern alternative to old retro Shoot 'em Up games that can be hard to play due to old hardware and games not being ported to modern systems.
 
 \subsection{Challenges}
-Handling enemy, projectile, and player collision in WPF.
-Displaying information and moving backgrounds in WPF.
-Storing enemy and level data in WPF.
+Core game functions like handling enemy, projectile, and player collision in WPF. Normally we would use a dedicated game engine like Godot or Unity, but due to the requirements of this project, we must make these functions ourself in WPF.
 
 
 \section{Scope}
-This game should the bare minimum contain one playable level with multiple enemy variations that can spawn. There should be a win and lose state, as well as a connected 'Game Over' screen on loss. There should be a main menu screen the user accesses first before starting the main game. There should be a high score tracker which displays and saves the highest scores to add replay value. Current Stretch Goals are as follows: multiple levels with different backgrounds, a working, upgrade shop and currency system, game saving, and music
+This game contains one playable level with multiple enemy variations that can spawn. This level is infinite and goes until the player loses, like Galaga. There will be a win and lose state, as well as a connected lose state screen on loss. There will be a main menu screen the user accesses first before starting the main game. There will be a high score tracker which displays and saves the highest scores to add replay value. Current Stretch Goals are as follows: multiple levels with different backgrounds, a working upgrade shop and currency system, and music. Music is currently completed, as it was very quick and easy. With the upgrade shop players can use some of their score (the curreny) to purchase upgrades for their ship.
 
 \subsection{Requirements}
-The requires come from how we intend the game to operate, and what we think will be the most fun for the user to experience. The requirements both make it so the game is operational (i.e. game actually works, core elements, etc. ), while also trying to make the user experience as great as possible. (i.e. sound and visual effect feedback)
+We developed our requirements based on what we think will be the most fun for the user to experience. The requirements both make it so the game is operational (i.e. game actually works, core elements, etc. ), while also trying to make the user experience as great as possible (i.e. sound and visual effect feedback).
 
 \subsubsection{Functional}
 \begin{itemize}
@@ -205,14 +206,16 @@ The requires come from how we intend the game to operate, and what we think will
 \item User needs to be able to earn points by eliminating enemies.
 \item User needs to be able to view their current score.
 \item Game needs to spawn enemies for the player to both avoid and shoot.
-\item User needs to be able to lose, then be able to try again.
+\item User needs to be able to lose.
+\item There should be visual effects and sound effects to enhance the game experience.
+\item There should be a scrolling background to give the user the impression of flying
 \end{itemize}
 
 \subsubsection{Non-Functional}
 \begin{itemize}
-\item There should be visual effects and sound effects to enhance the game experience.
-\item There should be a scrolling background to give the user the impression of flying
-
+\item High scores will be persistenty stored between runs
+\item Custom keybinidng (such as changing movement from arrow keys to WASD)
+\item Enemy randomization for replayability
 \end{itemize}
 
 \subsection{Use Cases}
@@ -242,7 +245,7 @@ Use Case ID & Use Case Name & Primary Actor & Complexity & Priority \\
 \begin{itemize}
 \item[Use Case Number:] 1
 \item[Use Case Name:] Playing the Game
-\item[Description:] A user wants to play the game, they will open the game and hit 'play' on the main menu.
+\item[Description:] A user wants to play the game.
 \end{itemize}
 
 \begin{enumerate}
@@ -260,7 +263,7 @@ Use Case ID & Use Case Name & Primary Actor & Complexity & Priority \\
 
 \begin{enumerate}
 \item User opens the application.
-\item[Termination Outcome:] The user looks at the score on the main menu.
+\item[Termination Outcome:] The user looks at the score on the main menu. If they are midgame they can look at the top right corner of the screen where the current score is displayed.
 \end{enumerate}
 
 
@@ -272,56 +275,86 @@ Use Case ID & Use Case Name & Primary Actor & Complexity & Priority \\
 
 \begin{enumerate}
 \item User is currently playing the game.
-\item User pauses the game using the 'p' key
-\item[Termination Outcome:] The user keeps the game paused for as long as they want, unpausing if they wish by hitting 'p' again
+\item User pauses the game using the p key
+\item[Termination Outcome:] The user keeps the game paused for as long as they want, unpausing if they wish by hitting p again
 \end{enumerate}
 
 
-\subsection{Interface Mockups}
-At first, this will largely be completely made up, as you get further along in your project, and closer to a final product, this will typically become simple screenshots of your running application.
-
-In this subsection, you will be showing what the screen should look like as the user moves through various use cases (make sure to tie the interface mockups back to the specific use cases they illustrate).
+\subsection{Interface}
+Since we did not get to making the Interface elements such as the Game Over Screen and Main Menu in this version of the project, included are the mockups for them in the interface section.
 
 \begin{figure}[ht!]
-\includegraphics[height=250px, width=350px]{Spitfire_91MockUp.jpg}
-\caption{This displays an idea for how the game looks during play}
-\label{cat1}
+\includegraphics[height=250px, width=350px]{GAMEACTION.png}
+\caption{This displays how the game looks during play}
+\label{gameplay}
+\end{figure}
+
+\begin{figure}[ht!]
+\includegraphics[height=250px, width=350px]{GAMEPAUSED.png}
+\caption{This displays how the game looks when it is paused}
+\label{gamepaused}
+\end{figure}
+
+\begin{figure}[ht!]
+\includegraphics[height=250px, width=350px]{MOCKUP TITLE.png}
+\caption{This displays an idea for how the menu screen will look}
+\label{mockup}
+\end{figure}
+
+\begin{figure}[ht!]
+\includegraphics[height=250px, width=350px]{GAMEOVER MOCKUP.png}
+\caption{This displays an idea for how the gameover screen will look}
+\label{gameover}
+\end{figure}
+
+\begin{figure}[ht!]
+\includegraphics[height=250px, width=350px]{MOCKUP TITLE.png}
+\caption{This displays an idea for how the menu screen will look}
+\label{mockup}
 \end{figure}
 
 
 \section{Project Timeline}
-We have already made a basic prototype, but we have yet to develop the minimum viable product to show to the class. The steps we will take to create the project will go as follows: 
-1. Create a game engine that will control several important functions such as: Movement control, enemy spawning, and collision detection.
-2. Create the movement controls and projectile firing. 
-3. Create the spawning of enemies and allow several different versions of enemies to be selected. This includes making an abstract enemy object and its concrete children.
-4. Create the system of collision detection. This also controls the losing of health and gaining of points as certain collisions are detected. 
-5. Create a Game Over state and display the appropriate state for a game over.
-6. Create a Pause Function 
-7. Create a main menu with High Score Board.
-8. Polishing Audio and Visual presentation.
+We have already made a demoable prototype that we showed in class, but we have yet to develop the full featured product. The steps we took or will take to create the project will go as follows: 
+\begin{enumerate}
+\item We have made a game engine that will control several important functions such as: Movement control, enemy spawning, and collision detection.
+\item We have made the movement controls and projectile firing. 
+\item We have made the spawning of enemies and allow several different versions of enemies to be selected. This includes making an basic enemy object and its derrived children.
+\item We have made the Pause Function
+\item We will creare the system of collision detection. This also controls the losing of health and gaining of points as certain collisions are detected. 
+\item We will create a Game Over state and display the appropriate state for a game over.
+\item Will we reate a main menu with High Score Board.
+\item We will polish Audio and Visual presentation.
+\end{enumerate}
+
+\subsection{Important Dates}
+\begin{itemize}
+\item4/28/22 - In class demo
+\item4/29/22 - Final documentation for the semester
+\end{itemize}
 
 \section{Project Structure}
-The project switches between three main windows, that open and close as appropriate. The Main Menu, is exactly what you would think it is, it has the controls for starting and exiting the game as well as displaying the highest scores. The GameMain is what controls the game and is what the player will spend most of their time in. This window is switches to GameOverWindow upon the player losing the game. The GameOverWindow allows the player to go straight to either the GameMain or MainMenu window, as well as displaying the score the player just achieved.
+The project switches between three main windows, that open and close as appropriate. The Main Menu has the controls for starting and exiting the game as well as displaying the highest scores. The GameMain is what controls the game and is what the player will spend most of their time in. This window is switches to GameOverWindow upon the player losing the game. The GameOverWindow allows the player to go straight to either the GameMain or MainMenu window, as well as displaying the score the player just achieved. The game currently has three different sizes of enemies, each will reward more points like  targets (i.e. the smaller the target, the more points it is worth).
 
 
 \subsection{UML Outline}
 \ref {UML}
-Here you can see the UML for our program. The meat of the program is in the GameEngine class, that contains several important functions that are called by both the game's main window 'GameMain' and the GameOverWindow. The Bullet class is derived from the bullet template (Template Design Pattern) and provides the fireBullet function the Rectangle it needs to add to the screen. The spawnEnemy function needs an Enemy class, including EnemyBasic and it's two children (Factory Design Pattern). The three windows are designed to be swapped between when certain functions are called.
+I'n this figure you can see the UML for our program. The meat of the program is in the GameEngine class, that contains several important functions that are called by both the game's main window GameMain and the GameOverWindow. The Bullet class is derived from the bullet template (Template Design Pattern) and provides the fireBullet function the Rectangle it needs to add to the screen. The spawnEnemy function needs an Enemy class, including EnemyBasic and it's two children (Factory Design Pattern). The three windows are designed to be swapped between when certain functions are called. The enemies use a Factory Design Pattern because the creational pattern is used to make different variants off of the basic enemy class. The bullet uses a Template Design Pattern because the bullet class is derived from an abstract template that could have multiple variations.
 \begin{figure}[ht!]
 \includegraphics[height=250px, width=350px]{DIA.png}
-\caption{This is the UML}
+\caption{This is the UML for Spitfire '91}
 \label{UML}
 \end{figure}
 
 \subsection{Design Patterns Used}
-We are implementing the Factory Pattern and Template Pattern for the project.
+We are implementing the Factory Pattern and Template Pattern for the project. You can see the factory pattern with the enemy classes, with two children of EnemyBasic being derived from EnemyBasic to create new enemy variants. Similarly, Template pattern is used by the bullet class. Although only one type of bullet was created for the project, it still derives from an abstract Template.
 
 
 \section{Results}
-Turns out WPF is not really meant for making games, and by not really, we mean not at all. WPF is an absolute nightmare to make games for, causing us to have to find weird workarounds and use things in strange unintended ways. Since neither of us took any graphics classes before hand we were stuck wrangling with the default WPF canvas. Currently we got a 'game' where you can move around the plane and shoot, but not much else. As it currently stands, enemy spawning is currently broken, and without enemy spawning various game functions like health, scoring, and the game over screen have no function.
+Turns out WPF is not really meant for making games, and by not really, we mean not at all. We had to find weird workarounds and use things in strange unintended ways. We worked with the default WPF canvas. Currently we have a game where you can move around the plane and shoot, but not much else. As it currently stands, enemy spawning is working, but their collision detection isn't. Without enemy collison various game functions like health, scoring, and the game over have no function. We were able to put in music, because that ended up being much simpler to do than we thought it would be.
 
 \subsection{Future Work}
-We are about $\frac{3}{5}^{ths}$ done with the project, but we only have so much time left. Highest priority is getting enemies to work, as without enemies key functions of the game like scoring have no purpose or function. We also need to make the Main Menu and Game Over menu, including the saving and displaying of high scores.
+We are about $\frac{2}{3}^{rds}$ done with the project, but we have run out of the time in the semester. Highest priority is getting collision detection to work, as without collision detection key functions of the game like scoring have no purpose or function. Once that is done we can move to making the Main Menu and Game Over menu, including the saving and displaying of high scores.
 
 
 
